@@ -9,6 +9,7 @@
     "prop-types": "^15.5.10",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
+    "react-ionicons": "^1.5.7",
     "recompose": "^0.23.4",
     "steem": "^0.5.7",
     "timeago.js": "^3.0.1"

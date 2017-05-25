@@ -11,8 +11,45 @@
     background-repeat: no-repeat;
     background-position: 50% 20%;
     border: 1px solid #eee;
+
+    margin-right: .5rem;
 }
 .unstyled-link{
 	color: inherit; 
   	text-decoration: none;
+}
+.info{
+	padding-left: 0.7rem;
+}
+.title{
+	color: #333;
+	margin: 0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.body{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	color: #666;
+	padding-top: .5rem;
+	padding-bottom: .2rem;
+	padding-left: .3rem;
+	padding-right: .3rem;
+}
+.footer{
+	color: #8a8a8a;
+}
+
+.icon{
+	margin-bottom: -6px;
+}
+.separated{
+	padding-right: 0.7rem;
+	padding-left: 0.7rem;
+    border-right: 1px solid;
+}
+.payout{
+	padding-left: 0;
 }

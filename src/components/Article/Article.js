@@ -5,6 +5,8 @@ import { repLog10, } from '../../utils'
 import './Article.css'
 import timeago from 'timeago.js';
 
+import Icon from 'react-ionicons'
+
 const Article = (props) => (
   <article className="article">
 	<div className="container">
@@ -12,20 +14,24 @@ const Article = (props) => (
 		
 		<div className="header">
 			<h3 className="title">
-				<a className="unstyled-link" href="#">{props.title}</a>
+				<a className="unstyled-link" href="#a">{props.title}</a>
 			</h3>
 		</div>
 
 		<div className="body">
-			<a className="unstyled-link" href="#">{props.body}</a>
+			<a className="unstyled-link" href="#a">{props.body}</a>
 		</div>
 
 		<div className="footer">
-			<span className="payout">{props.payout}</span>
-			<span className="votes">{props.pending_payout_value}</span>
-			<span className="children">{props.children}</span>
-			<span className="reblog">
-				<a className="unstyled-link" href="#"></a>
+			<span className="payout separated">
+				<Icon className="icon" icon="ion-arrow-up-b"/>{props.pending_payout_value}
+			</span>
+			<span className="votes separated">
+				<Icon className="icon" icon="ion-ios-arrow-up"/>{props.net_votes}
+			</span>
+			<span className="children separated"><Icon className="icon" icon="ion-chatboxes"/>{props.children}</span>
+			<span className="reblog separated">
+				<a className="unstyled-link" href="#a"><Icon className="icon" icon="ion-arrow-return-right"/></a>
 			</span>
 			<span className="info">{
 				`${props.created} by ${props.author}
